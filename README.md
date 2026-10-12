@@ -6,13 +6,20 @@ Telephony for Frappe apps. Adds Exotel & Twilio integration in any Frappe app.
 
 ### Installation
 
+本仓库是 [frappe/telephony](https://github.com/frappe/telephony) 的个人镜像分支，内容与上游
+`develop` 保持一致，未做功能改动。
+
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app telephony --branch develop
+bench get-app https://github.com/0409linxiansheng/telephony --branch develop
 bench install-app telephony
 ```
+
+> 仓库名 `telephony` 与本 app 名一致，`bench get-app` 会克隆到 `apps/telephony`，
+> 所以 `bench install-app telephony` 可以直接执行，不需要额外步骤。
+> 默认分支就是 `develop`，因此 `--branch develop` 也可以省略。
 
 ---
 
